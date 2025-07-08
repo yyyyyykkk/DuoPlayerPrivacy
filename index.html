@@ -106,20 +106,20 @@
             
             // Language mapping
             const languageMap = {
-                'zh': 'privacy-policy.html',        // Chinese
-                'en': 'privacy-policy-en.html',     // English
-                'fr': 'privacy-policy-fr.html',     // French
-                'es': 'privacy-policy-es.html',     // Spanish
-                'ko': 'privacy-policy-ko.html',     // Korean
-                'ja': 'privacy-policy-ja.html'      // Japanese
+                'zh': 'zh.html',        // Chinese
+                'en': 'en.html',     // English
+                'fr': 'fr.html',     // French
+                'es': 'es.html',     // Spanish
+                'ko': 'ko.html',     // Korean
+                'ja': 'ja.html'      // Japanese
             };
             
             // Check if we have a policy for this language
             let redirectUrl = languageMap[languageCode];
             
-            // If no match, default to Chinese
+            // If no match, default to English
             if (!redirectUrl) {
-                redirectUrl = 'privacy-policy.html';
+                redirectUrl = 'en.html';
             }
             
             // Add some delay for user experience
